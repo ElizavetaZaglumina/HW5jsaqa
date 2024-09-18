@@ -15,7 +15,7 @@ Feature: Registration cinema
         When user choose date
         When user choose movie time
         When user choose a seat
-        When user choose a seat
+        When user choose a seat 2
         When user click on the reserve button
         Then user get the text "Вы выбрали билеты:"
         When user click on the get code button

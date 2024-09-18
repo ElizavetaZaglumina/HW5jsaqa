@@ -34,7 +34,11 @@ Before(async function () {
   });
 
   When("user choose a seat", async function () {
-    return await clickElement(this.page, "div[class='buying-scheme__wrapper'] div:nth-child(3) span:nth-child(5)");
+    return await clickElement(this.page, "div[class='buying-scheme__wrapper'] div:nth-child(2) span:nth-child(1)");
+  });
+
+  When("user choose a seat 2", async function () {
+    return await clickElement(this.page, "div[class='buying-scheme__wrapper'] div:nth-child(2) span:nth-child(2)");
   });
 
   When("user click on the reserve button", async function () {
@@ -58,7 +62,7 @@ Before(async function () {
   });
 
   When("user choose an occupied place", async function () {
-    await clickElement(this.page, "div[class='buying-scheme__wrapper'] div:nth-child(3) span:nth-child(5)");
+    await clickElement(this.page, "div[class='buying-scheme__wrapper'] div:nth-child(2) span:nth-child(1)");
   });
 
   Then("button for reserving is inactive {string}", async function (string) {
